@@ -17,3 +17,5 @@ http://thomaspfeifer.net/usbasp_to_ppm2usb_mod_en.htm
 
 
 avrdude -p m8 -c avrisp -P /dev/ttyUSB0 -b 19200 -U flash:w:main.hex
+
+avrdude -C /usr/share/arduino/hardware/archlinux-arduino/avr/bootloaders/gemma/avrdude.conf -p m8 -c avrisp -P /dev/ttyUSB0 -b 19200 -U flash:w:main.hex:i
